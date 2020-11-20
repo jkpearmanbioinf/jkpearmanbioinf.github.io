@@ -1,0 +1,1647 @@
+<html>
+<head>
+
+<title>Lakes380 Advent Calendar</title>
+<style>
+
+#calendar {
+    background-image:url(IMG_0663.jpg);
+    width: 1400px;
+    height: 650px;
+    background-size: 1400px 650px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #028b9c;
+}
+
+.frame {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Lochnagar.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 112.14px;
+    top: 75px;
+    width: 120px;
+    height: 120px
+}
+
+.door {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame:hover .door {
+    transform: rotateY(-140deg);
+}
+
+.wing {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid; black;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px
+}
+
+.front {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-97.5px -56px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.backa{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame1 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Tikitapu.jpg), black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 329.28px;
+    top: 75px;
+    width: 120px;
+    height: 120px
+}
+
+.door1 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame1:hover .door1 {
+    transform: rotateY(-140deg);
+}
+
+.wing1 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front1 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-314.64px -56px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back1{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back1a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame2 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Archeron.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 546.42px;
+    top: 75px;
+    width: 120px;
+    height: 120px
+}
+
+.door2 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame2:hover .door2 {
+    transform: rotateY(-140deg);
+}
+
+.wing2 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front2 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-531.78px -56px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back2{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back2a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame3 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Moawhitu.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 763.56px;
+    top: 75px;
+    width: 120px;
+    height: 120px
+}
+
+.door3 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame3:hover .door3 {
+    transform: rotateY(-140deg);
+}
+
+.wing3 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front3 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-748.92px -56px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back3{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back3a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame4 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Kuwakatai.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 980.7px;
+    top: 75px;
+    width: 120px;
+    height: 120px
+}
+
+.door4 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame4:hover .door4 {
+    transform: rotateY(-140deg);
+}
+
+.wing4 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front4 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-966.06px -56px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back4{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back4a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.frame5 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Heron.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 1195.84px;
+    top: 75px;
+    width: 120px;
+    height: 120px
+}
+
+.door5 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame5:hover .door5 {
+    transform: rotateY(-140deg);
+}
+
+.wing5 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front5 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-1180.2px -56px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back5{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back5a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+.frame6 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Herengawe.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 112.14px;
+    top: 225px;
+    width: 120px;
+    height: 120px
+}
+
+.door6 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame6:hover .door6 {
+    transform: rotateY(-140deg);
+}
+
+.wing6 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front6 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-97.5px -206px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back6{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back6a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.frame7 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(DuncanStream.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 329.28px;
+    top: 225px;
+    width: 120px;
+    height: 120px
+}
+
+.door7 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame7:hover .door7 {
+    transform: rotateY(-140deg);
+}
+
+.wing7 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front7 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-314.64px -206px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back7{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back7a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame8 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(LittleMckay.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 546.42px;
+    top: 225px;
+    width: 120px;
+    height: 120px
+}
+
+.door8 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame8:hover .door8 {
+    transform: rotateY(-140deg);
+}
+
+.wing8 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front8 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-531.78px -206px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back8{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back8a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame9 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(WaiRaupo.jpg), black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    left: 763.56px;
+    top: 225px;
+    width: 120px;
+    height: 120px
+}
+
+.door9 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame9:hover .door9 {
+    transform: rotateY(-140deg);
+}
+
+.wing9 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front9 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-748.92px -206px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back9{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back9a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+.frame10 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Nigel.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 980.7px;
+    top: 225px;
+    width: 120px;
+    height: 120px
+}
+
+.door10 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame10:hover .door10 {
+    transform: rotateY(-140deg);
+}
+
+.wing10 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front10 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-966.06px -206px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back10{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back10a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+.frame11 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Oingo.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 1195.84px;
+    top: 225px;
+    width: 120px;
+    height: 120px
+}
+
+.door11 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame11:hover .door11 {
+    transform: rotateY(-140deg);
+}
+
+.wing11 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front11 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-1180.2px -206px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back11{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back11a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+.frame12 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Peel.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 112.14px;
+    top: 375px;
+    width: 120px;
+    height: 120px
+}
+
+.door12 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame12:hover .door12 {
+    transform: rotateY(-140deg);
+}
+
+.wing12 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front12 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-97.5px -356px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back12{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back12a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+.frame13 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Dispute.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 329.28px;
+    top: 375px;
+    width: 120px;
+    height: 120px
+}
+
+.door13 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame13:hover .door13 {
+    transform: rotateY(-140deg);
+}
+
+.wing13 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front13 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-314.64px -356px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back13{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back13a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame14 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(SuttonSalt.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 546.42px;
+    top: 375px;
+    width: 120px;
+    height: 120px
+}
+
+.door14 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame14:hover .door14 {
+    transform: rotateY(-140deg);
+}
+
+.wing14 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front14 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-531.78px -356px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back14{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back14a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.frame15 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Ione.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 763.56px;
+    top: 375px;
+    width: 120px;
+    height: 120px
+}
+
+.door15 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame15:hover .door15 {
+    transform: rotateY(-140deg);
+}
+
+.wing15 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front15 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-748.92px -356px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back15{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back15a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+
+.frame16 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Eggling.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 980.7px;
+    top: 375px;
+    width: 120px;
+    height: 120px
+}
+
+.door16 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame16:hover .door16 {
+    transform: rotateY(-140deg);
+}
+
+.wing16 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front16 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-966.06px -356px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back16{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back16a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.frame17 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Emily.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 1195.84px;
+    top: 375px;
+    width: 120px;
+    height: 120px
+}
+
+.door17 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame17:hover .door17 {
+    transform: rotateY(-140deg);
+}
+
+.wing17 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front17 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-1180.2px -356px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back17{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back17a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 50px;
+}
+
+.frame18 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Ngarotoiti.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 112.14px;
+    top: 525px;
+    width: 120px;
+    height: 120px
+}
+
+.door18 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame18:hover .door18 {
+    transform: rotateY(-140deg);
+}
+
+.wing18 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front18 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-97.5px -506px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back18{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+
+.back18a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.back18b{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 105px;
+}
+
+
+.frame19 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Pukepuke.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 329.28px;
+    top: 525px;
+    width: 120px;
+    height: 120px
+}
+
+.door19 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame19:hover .door19 {
+    transform: rotateY(-140deg);
+}
+
+.wing19 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front19 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-314.64px -506px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back19{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back19a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame20 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Alpine.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 546.42px;
+    top: 525px;
+    width: 120px;
+    height: 120px
+}
+
+.door20 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame20:hover .door20 {
+    transform: rotateY(-140deg);
+}
+
+.wing20 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front20 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-531.78px -506px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back20{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back20a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.frame21 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Kirkpatrick.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 763.56px;
+    top: 525px;
+    width: 120px;
+    height: 120px
+}
+
+.door21 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame21:hover .door21 {
+    transform: rotateY(-140deg);
+}
+
+.wing21 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front21 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-748.92px -506px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back21{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back21a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+
+.frame22 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Rotokotuku.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 980.7px;
+    top: 525px;
+    width: 120px;
+    height: 120px
+}
+
+.door22 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame22:hover .door22 {
+    transform: rotateY(-140deg);
+}
+
+.wing22 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front22 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-966.06px -506px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back22{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back22a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.back22a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+
+.back22b{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 105px;
+}
+
+.frame23 {
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 1px #000;
+    background:url(Nganoke.jpg), black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 1195.84px;
+    top: 525px;
+    width: 120px;
+    height: 120px
+}
+
+.door23 {
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: .7s transform cubic-bezier(0.470, 0.000, 0.745, 0.715);
+}
+
+.frame23:hover .door23 {
+    transform: rotateY(-140deg);
+}
+
+.wing23 {
+    position: absolute;
+    background:#028b9c;
+    left: 0px;
+    top: 0px;
+    border: 1px solid;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+     width: 120px;
+    height: 120px
+}
+
+.front23 {
+    background-image:url(IMG_0663.jpg);
+    background-size: 1400px 650px;
+    background-position:-1180.2px -506px;
+    padding: 40px 0;
+    color: #028b9c;
+}
+
+.back23{
+    transform: rotateY(180deg);
+    background:black;
+    color: #028b9c;
+}
+
+.back23a{
+    transform: rotateY(180deg);
+    background:transparent;
+    border: none;
+    color: #028b9c;
+	top: 35px;
+}
+</style>
+</head>
+<body>
+    <div id="calendar", align="center", style="font-size:45px">Lakes380 Advent Calendar 2020
+        <div class="frame">
+            <div class="door">
+                <div class="wing front", align="center", style="font-size:55px"> 9</div>
+                <div class="wing back"></div>
+                <div class="wing backa", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/lochnagar/"> Lake Lochnagar</a> </div>
+            </div>
+        </div>
+        
+        <div class="frame1">
+            <div class="door1">
+                <div class="wing front1", align="center", style="font-size:55px"> 16</div>
+                <div class="wing back1"></div>
+                <div class="wing back1a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/tikitapu/">  Lake Tikitapu</a></div>
+            </div>
+        </div>
+        
+        <div class="frame2">
+            <div class="door2">
+                <div class="wing front2", align="center", style="font-size:55px"> 5</div>
+                <div class="wing back2"></div>
+                <div class="wing back2a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/acherons-1/"> Acheron Lake 1</a></div>
+            </div>
+        </div>
+        
+        <div class="frame3">
+            <div class="door3">
+                <div class="wing front3", align="center", style="font-size:55px", style="color:#ffffff;"> 21</div>
+                <div class="wing back3"></div>
+                <div class="wing back3a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/moawhitu/">  Lake Moawhitu</a></div>
+            </div>
+        </div>
+        
+        <div class="frame4">
+            <div class="door4">
+                <div class="wing front4", align="center", style="font-size:55px"> 2</div>
+                <div class="wing back4"></div>
+                <div class="wing back4a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/kuwakatai/">  Lake Kuwakatai</a></div>
+
+            </div>
+        </div>
+        
+        <div class="frame5">
+            <div class="door5">
+                <div class="wing front5", align="center", style="font-size:55px" > 19</div>
+                <div class="wing back5"></div>
+                <div class="wing back5a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/heron/">  Lake Heron</a></div>
+            </div>
+        </div>
+        
+           <div class="frame6">
+            <div class="door6">
+                <div class="wing front6", align="center", style="font-size:55px"> 23</div>
+                <div class="wing back6"></div>
+                <div class="wing back6a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/herengawe/">  Lake Herengawe</a></div>
+            </div>
+        </div>
+        
+        <div class="frame7">
+            <div class="door7">
+                <div class="wing front7", align="center", style="font-size:55px"> 1</div>
+                <div class="wing back7"></div>
+                <div class="wing back7a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/duncanstream3/">  Duncan Stream 3</a></div>
+            </div>
+        </div>
+        
+        <div class="frame8">
+            <div class="door8">
+                <div class="wing front8", align="center", style="font-size:55px"> 12</div>
+                <div class="wing back8"></div>
+                <div class="wing back8a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/little-mckay/">  Lake Little Mckay</a></div>
+            </div>
+        </div>
+        
+        <div class="frame9">
+            <div class="door9">
+                <div class="wing front9", align="center", style="font-size:55px"> 8</div>
+                <div class="wing back9"></div>
+                <div class="wing back9a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/wai-raupo/">  Wai Raupo</a></div>
+            </div>
+        </div>
+        
+        <div class="frame10">
+            <div class="door10">
+                <div class="wing front10", align="center", style="font-size:55px"> 14</div>
+                <div class="wing back10"></div>
+                <div class="wing back10a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/nigel/">  Lake Nigel</a></div>
+
+            </div>
+        </div>
+        
+        <div class="frame11">
+            <div class="door11">
+                <div class="wing front11", align="center", style="font-size:55px"> 17</div>
+                <div class="wing back11"></div>
+                <div class="wing back11a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/oingo/">  Lake Oingo</a></div>
+            </div>
+        </div>
+   
+        <div class="frame12">
+            <div class="door12">
+                <div class="wing front12", align="center", style="font-size:55px"> 11</div>
+                <div class="wing back12"></div>
+                <div class="wing back12a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/peel/">  Lake Peel</a></div>
+            </div>
+        </div>
+        
+        <div class="frame13">
+            <div class="door13">
+                <div class="wing front13", align="center", style="font-size:55px"> 4</div>
+                <div class="wing back13"></div>
+                <div class="wing back13a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/lake-dispute/">  Lake Dispute</a></div>
+            </div>
+        </div>
+        
+        <div class="frame14">
+            <div class="door14">
+                <div class="wing front14", align="center", style="font-size:55px"> 13</div>
+                <div class="wing back14"></div>
+                <div class="wing back14a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/sutton-salt-lake/">  Sutton Salt Lake</a></div>
+            </div>
+        </div>
+        
+        <div class="frame15">
+            <div class="door15">
+                <div class="wing front15", align="center", style="font-size:55px"> 20</div>
+                <div class="wing back15"></div>
+                <div class="wing back15a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/ione/">  Lake Ione</a></div>
+            </div>
+        </div>
+        
+        <div class="frame16">
+            <div class="door16">
+                <div class="wing front16", align="center", style="font-size:55px"> 22</div>
+                <div class="wing back16"></div>
+                <div class="wing back16a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/eggeling/">  Lake Eggeling</a></div>
+
+            </div>
+        </div>
+        
+        <div class="frame17">
+            <div class="door17">
+                <div class="wing front17", align="center", style="font-size:55px"> 6</div>
+                <div class="wing back17"></div>
+                <div class="wing back17a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/emily/">  Lake Emily</a></div>
+            </div>
+        </div>
+        
+           <div class="frame18">
+            <div class="door18">
+                <div class="wing front18", align="center", style="font-size:55px"> 7</div>
+                <div class="wing back22"></div>
+                <div class="wing back22a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/lake-ngarotoiti/">  Lake Ngarotoiti</a></div>
+                <div class="wing back22b", align="center", style="font-size:8px"> Credit: David Schmale</div>
+            </div>
+        </div>
+        
+        <div class="frame19">
+            <div class="door19">
+                <div class="wing front19", align="center", style="font-size:55px"> 24</div>
+                <div class="wing back19"></div>
+                <div class="wing back19a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/pukepuke-lagoon/">  Pukepuke Lagoon</a></div>
+            </div>
+        </div>
+        
+        <div class="frame20">
+            <div class="door20">
+                <div class="wing front20", align="center", style="font-size:55px"> 18</div>
+                <div class="wing back20"></div>
+                <div class="wing back20a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/alpine/">  Alpine Lake</a></div>
+            </div>
+        </div>
+        
+        <div class="frame21">
+            <div class="door21">
+                <div class="wing front21", align="center", style="font-size:55px"> 3</div>
+                <div class="wing back21"></div>
+                <div class="wing back21a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/lake-kirkpatrick/">  Lake Kirkpatrick</a></div>
+            </div>
+        </div>
+        
+        <div class="frame22">
+            <div class="door22">
+                <div class="wing front22", align="center", style="font-size:55px"> 10</div>
+                <div class="wing back22"></div>
+                <div class="wing back22a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/lake-rotokotuku-kotukutuku/">  Lake Rotokotuku</a></div>
+                <div class="wing back22b", align="center", style="font-size:8px"> Credit: David Schmale</div>
+				
+            </div>
+        </div>
+        
+        <div class="frame23">
+            <div class="door23">
+                <div class="wing front23", align="center", style="font-size:55px"> 15</div>
+                <div class="wing back23"></div>
+                <div class="wing back23a", align="center", style="font-size:25px"><a href="https://lakes380.com/lakes/nganoke/">  Lake Nganoke</a></div>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
